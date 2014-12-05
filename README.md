@@ -1,7 +1,7 @@
 weleoka/crssb
 =========
 
-PHP class for comments functionality with MzSQL database.
+PHP class for comments functionality with MySQL database.
 
 
 

@@ -1,0 +1,20 @@
+{
+"name": "weleoka/comment",
+"type": "library",
+"description": "Comments interface for MySQL",
+"keywords": ["comment", "education", "wrapper"],
+"homepage": "https://github.com/weleoka/comment",
+"license": "MIT",
+"authors": [
+{
+"name": "Kai Weeks",
+"email": "kai.weeks@eeee.se",
+"role": "Developer"
+}
+],
+"require": {
+},
+"autoload": {
+"psr-4": { "Weleoka\\": "src/" }
+}
+} 
