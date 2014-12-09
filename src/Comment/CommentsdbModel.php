@@ -1,5 +1,5 @@
 <?php
-namespace Phpmvc\Comment;
+namespace Weleoka\Comment;
 
 /**
  * To attach comments-flow to a page or some content.
@@ -22,9 +22,9 @@ public function save($values = [])
     $values = $this->getProperties();
  
     if (isset($values['id'])) {
-        return $this->update($values);
+        return $this->update($values, $this->getSource());
     } else {
-        return $this->create($values);
+        return $this->create($values, $this->getSource());
     }
 }
 
@@ -61,7 +61,7 @@ public function find($id)
     	$this->db->execute([$id]);
     	return $this->db->fetchInto($this);
  	} else {
-		echo "No user found, sorry";
+		echo "No question found, sorry";
  	} 
 }
 
@@ -177,7 +177,7 @@ public function find($id)
     	$keys   = array_keys($values);
     	$values = array_values($values);
  
-    	// Its update, remove id and use as where-clause
+    	// It is an update so remove id and use as where-clause
     	unset($keys['id']);
     	$values[] = $this->id;
  

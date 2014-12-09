@@ -5,7 +5,7 @@ namespace Weleoka\Comment;
  * Model for Comments.
  *
  */
-class Comment extends \Weleoka\Comment\CommentsdbModel
+class Answer extends \Weleoka\Comment\CommentsdbModel
 {
 
 /*
